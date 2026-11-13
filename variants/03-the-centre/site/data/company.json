@@ -1,0 +1,104 @@
+{
+  "numbers": [
+    { "value": 40, "suffix": "+", "unit": "acres", "label": "Own pineapple farms (MD2 and SG1)" },
+    { "value": 50, "suffix": "+", "unit": "farmers", "label": "Contract farmers in our network" },
+    { "value": 600, "suffix": "+", "unit": "acres", "label": "Across 6 states through contract farming" },
+    { "value": 50, "suffix": "", "unit": "t/day", "label": "CPPC handling capacity" },
+    { "value": 6, "suffix": "", "unit": "markets", "label": "Japan, South Korea, China, UAE, Saudi Arabia, Europe" },
+    { "value": 2000, "suffix": "", "unit": "acres", "label": "Network target by 2028" }
+  ],
+  "markets": [
+    { "name": "Japan", "lat": 36.2, "lng": 138.3 },
+    { "name": "South Korea", "lat": 36.5, "lng": 127.9 },
+    { "name": "China", "lat": 31.2, "lng": 121.5 },
+    { "name": "UAE", "lat": 25.2, "lng": 55.3 },
+    { "name": "Saudi Arabia", "lat": 24.7, "lng": 46.7 },
+    { "name": "Europe", "lat": 51.9, "lng": 4.5 }
+  ],
+  "farms": [
+    { "name": "Perlis", "lat": 6.44, "lng": 100.2 },
+    { "name": "Gerik, Perak", "lat": 5.43, "lng": 101.13 },
+    { "name": "Gambang, Pahang", "lat": 3.71, "lng": 103.1 },
+    { "name": "Seremban, Negeri Sembilan", "lat": 2.73, "lng": 101.94 },
+    { "name": "Jasin, Melaka", "lat": 2.31, "lng": 102.43 },
+    { "name": "Pontian, Johor (own SG1 farm)", "lat": 1.49, "lng": 103.39 }
+  ],
+  "cppc": { "name": "CPPC, Labu Lanjut, Sepang", "lat": 2.74, "lng": 101.69, "area": "About 8,000 sq ft", "coldRooms": 3, "capacity": "Up to 50 t/day", "near": "Close to KLIA and Port Klang" },
+  "process": [
+    { "step": "Grow", "title": "Farmers grow", "text": "Our own farms and 50+ contract farmers grow MD2 and SG1 across 6 states.", "image": "assets/img/farm-aerial-rows.jpg" },
+    { "step": "Plan", "title": "We plan and support", "text": "Production planning, agronomy and technical support, and quality standards from planting to harvest.", "image": "assets/img/team-field.jpg" },
+    { "step": "Collect", "title": "Harvest collected", "text": "Fruit is collected at harvest from every farm in the network.", "image": "assets/img/harvest-carry.jpg" },
+    { "step": "Process", "title": "CPPC", "text": "Aggregation, sorting, grading, packing, three cold rooms and IQF processing in Sepang.", "image": "assets/img/packhouse-grading.jpg" },
+    { "step": "Ship", "title": "To market", "text": "Domestic distribution, or export by air from KLIA and by sea from Port Klang.", "image": "assets/img/export-reefer-loading.jpg" },
+    { "step": "Buyers", "title": "Buyers in 6 markets", "text": "Importers and distributors in Japan, South Korea, China, the UAE, Saudi Arabia and Europe.", "image": "assets/img/export-ship-cranes.jpg" }
+  ],
+  "streams": [
+    { "name": "Upstream", "text": "Farm and produce: own farms, contract farming, agronomy." },
+    { "name": "Midstream", "text": "Market-ready products: collection, grading, packing, cold rooms, IQF." },
+    { "name": "Downstream", "text": "Global market access: domestic distribution and export to 6 markets." }
+  ],
+  "capabilities": ["Produce", "Process", "Market", "Manage", "Advise", "Develop people"],
+  "services": [
+    { "id": "contract-farming", "name": "Contract farming", "text": "Production planning, agronomy and technical support, quality standards, guaranteed collection and market access for pineapple growers.", "link": "farm-with-us.html" },
+    { "id": "project-management", "name": "Project management", "text": "Farm and processing-facility development, from planning to commercialisation." },
+    { "id": "consulting", "name": "Consulting", "text": "Agribusiness strategy, export readiness and market entry." },
+    { "id": "training", "name": "Training and knowledge transfer", "text": "Cultivation, farm management, post-harvest handling and export readiness. HRD Corp accredited trainer (Dr Siti Nur Syuhada Musa, ID 17093)." }
+  ],
+  "doors": [
+    { "name": "Source from us", "for": "Importers, distributors, processors", "text": "MD2 and SG1, fresh and IQF, by the carton or the container.", "link": "contact.html" },
+    { "name": "Farm with us", "for": "Pineapple growers", "text": "A contract, technical support and a buyer for your crop.", "link": "farm-with-us.html" },
+    { "name": "Build with us", "for": "Agencies and investors", "text": "Farm and processing projects, planned and run.", "link": "services.html" },
+    { "name": "Grow with us", "for": "Teams and organisations", "text": "Training in cultivation, post-harvest and export readiness.", "link": "services.html" }
+  ],
+  "timeline": [
+    { "year": "2020", "text": "Founded as Mate Clove Sdn Bhd on 17 July 2020." },
+    { "year": "2023", "text": "Pivot into pineapple, from Sri Kembangan, with a contract network of about 180 acres." },
+    { "year": "2024", "text": "The network expands, with first steps into South Korea." },
+    { "year": "2025", "text": "The CPPC opens at Labu Lanjut, Sepang. Own SG1 farm in Pontian, Johor." },
+    { "year": "2026", "text": "Renamed Agrionyx Group. 600+ acres in the network, IQF processing. Buavia launches in December." }
+  ],
+  "vision": "To build a globally connected agribusiness group that transforms agriculture into an integrated, scalable and sustainable ecosystem creating lasting value for people, industry and nature.",
+  "mission": "To connect every critical part of the agricultural value chain from farm to global market through integration, technology, knowledge and strong commercial partnerships.",
+  "purpose": "To Make Life Better Through Agriculture.",
+  "values": [
+    { "name": "Empowering farmers", "text": "Improve productivity, quality and farmer income." },
+    { "name": "Building innovation", "text": "Develop collection, processing, cold chain and value-added capabilities." },
+    { "name": "Advancing technology", "text": "Modern farming, mechanisation, processing technology and data-driven practices." },
+    { "name": "Connecting global markets", "text": "Connect Malaysian agricultural production with domestic and international markets." },
+    { "name": "Creating sustainable businesses", "text": "Commercially viable agricultural ecosystems that generate long-term value." }
+  ],
+  "principles": ["Market-led", "Integrated", "Scalable", "Traceable"],
+  "leaders": [
+    { "name": "Khairul Anuar Mohd Shah", "role": "Co-Founder and Managing Director", "text": "Agricultural Science graduate of UPM with 13+ years in agribusiness, including JCorp and Kulim. Secretary of the Malaysia Pineapple Exporters Association (MAPEA) and Deputy Chairman of the Malaysia SG1 Pineapple Association.", "image": "assets/img/leader-khairul-cutout.png" },
+    { "name": "Dr Siti Nur Syuhada Musa", "role": "Director and Strategic Advisor", "text": "PhD in Human Resource Development. HRD Corp accredited trainer (ID 17093), leading training and knowledge transfer.", "image": "assets/img/leader-siti-cutout.png" }
+  ],
+  "roles": [
+    { "org": "Malaysia Pineapple Exporters Association (MAPEA)", "role": "Secretary" },
+    { "org": "Malaysia SG1 Pineapple Association", "role": "Deputy Chairman" }
+  ],
+  "events": [
+    { "title": "MoU exchange with LPNM at MAHA Go Global", "image": "assets/img/real-mou-maha-lpnm.jpg" },
+    { "title": "Trade-show booth", "image": "assets/img/real-tradeshow-booth.jpg" },
+    { "title": "Pineapples on show at a trade fair", "image": "assets/img/real-tradeshow-pineapples.jpg" },
+    { "title": "Signing in the UAE", "image": "assets/img/real-uae-signing.jpg" },
+    { "title": "Buyer meeting in the UAE", "image": "assets/img/real-uae-meeting.jpg" },
+    { "title": "Meeting in China", "image": "assets/img/real-china-meeting.jpg" },
+    { "title": "Chef's Table pineapple event", "image": "assets/img/real-chefs-table.jpg" },
+    { "title": "The team at the CPPC", "image": "assets/img/real-team-facility.jpg" }
+  ],
+  "grower": {
+    "headline": "Farmers Grow. Agrionyx Connects the Ecosystem.",
+    "bm": "Tanam bersama kami [client to confirm a BM version]",
+    "offer": ["Production planning", "Agronomy and technical support", "Quality standards", "Guaranteed collection at harvest", "Market access, domestic and export"],
+    "terms": "Minimum acreage and contract terms [client to confirm]"
+  },
+  "faqs": [
+    { "q": "Which varieties do you supply?", "a": "MD2 and Sarawak Gold (SG1) pineapple." },
+    { "q": "Fresh or frozen?", "a": "Both. Fresh fruit, and IQF frozen pineapple." },
+    { "q": "How much can you supply?", "a": "Up to 50 tonnes a day through our CPPC, from 600+ acres in our network, growing to 2,000 acres by 2028." },
+    { "q": "Which markets do you ship to?", "a": "Japan, South Korea, China, the UAE, Saudi Arabia and Europe, plus domestic buyers in Malaysia." },
+    { "q": "What are your prices and minimum order?", "a": "Prices are quoted per order, by volume and destination. MOQ and Incoterms [client to confirm]." },
+    { "q": "Which certifications do you hold?", "a": "[client to confirm]" },
+    { "q": "How do I join as a farmer?", "a": "Through our contract farming programme: production planning, agronomy and technical support, quality standards, collection and market access. Minimum acreage [client to confirm]." }
+  ]
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Agrionyx · Website variants</title>
+<meta name="description" content="Four website directions for Agrionyx Group: Malaysian MD2 and SG1 pineapple, from farm to global markets.">
+<meta property="og:title" content="Agrionyx · Website variants">
+<meta property="og:description" content="Four website directions for Agrionyx Group: Malaysian MD2 and SG1 pineapple, from farm to global markets.">
+<meta property="og:image" content="https://agrionyx-website.vercel.app/variants/01-farm-to-port/site/assets/og.jpg">
+<link rel="icon" href="variants/04-every-acre/site/assets/img/logo-agx.png">
+<style>
+  :root { --soil: #16130E; --soil-2: #1F1B14; --cream: #F6F0E2; --gold: #F2B53A; --leaf: #5E9E4A; --muted: #B9AF99; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100svh; background: var(--soil); color: var(--cream); font: 17px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; display: grid; place-items: center; padding: 48px 20px; }
+  main { width: min(880px, 100%); }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+  .brand img { width: 52px; height: 52px; background: var(--cream); border-radius: 12px; padding: 6px; }
+  h1 { font-size: clamp(30px, 5vw, 52px); line-height: 1.05; margin: 0 0 10px; letter-spacing: -.01em; }
+  h1 span { color: var(--gold); }
+  p.lede { color: var(--muted); margin: 0 0 36px; max-width: 56ch; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  li { display: grid; grid-template-columns: 220px 1fr auto; gap: 18px; align-items: center; padding: 20px 22px; background: var(--soil-2); border-radius: 14px; }
+  li strong { font-size: 19px; }
+  li span { color: var(--muted); font-size: 15px; }
+  .go { background: var(--gold); color: var(--soil); text-decoration: none; font-weight: 700; padding: 10px 20px; border-radius: 99px; transition: transform .2s, background .2s; }
+  .go:hover { transform: translateY(-2px); background: #F7C65E; }
+  footer { margin-top: 28px; color: var(--muted); font-size: 13px; }
+  @media (max-width: 680px) { li { grid-template-columns: 1fr; gap: 8px; } .go { justify-self: start; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><img src="variants/04-every-acre/site/assets/img/logo-agx.png" alt="Agrionyx"><strong>Agrionyx Group</strong></div>
+  <h1>Rooted in Farming. <span>Connected to the World.</span></h1>
+  <p class="lede">Four website directions for Agrionyx: MD2 and Sarawak Gold pineapple, fresh and IQF, from Malaysian farms to six markets. Pick the one that feels most like you.</p>
+  <ul>
+    <li><strong>V1 · Farm to Port</strong><span>One camera journey in your films: over the pineapple fields, through the CPPC, out to the port.</span><a class="go" href="variants/01-farm-to-port/site/">Open</a></li>
+    <li><strong>V2 · From the Crown</strong><span>One pineapple, followed from its plant into the CPPC and on to fresh and IQF.</span><a class="go" href="variants/02-from-the-crown/site/">Open</a></li>
+    <li><strong>V3 · The Centre</strong><span>Your real CPPC on stage, with fruit flowing in from farmers and out to buyers.</span><a class="go" href="variants/03-the-centre/site/">Open</a></li>
+    <li><strong>V4 · Every Acre</strong><span>Every acre a point of light: a pineapple that becomes your farm map and export routes.</span><a class="go" href="variants/04-every-acre/site/">Open</a></li>
+  </ul>
+  <footer>Some farm, packhouse and export photos are illustrative. Items marked [client to confirm] need your input.</footer>
+</main>
+</body>
+</html>

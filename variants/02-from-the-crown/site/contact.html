@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Contact | Agrionyx</title>
+<meta name="description" content="Send a sourcing brief or spec request for MD2, SG1 or IQF pineapple on WhatsApp, or join Agrionyx as a grower.">
+<meta property="og:title" content="Contact | Agrionyx">
+<meta property="og:description" content="Send a sourcing brief or spec request for MD2, SG1 or IQF pineapple on WhatsApp, or join Agrionyx as a grower.">
+<meta property="og:image" content="https://agrionyx-website.vercel.app/variants/02-from-the-crown/site/assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F6F0E2">
+<link rel="icon" href="assets/img/logo-agx.png">
+<link rel="preload" href="assets/fonts/cabinet-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/home.css">
+<script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('agx-iris'))document.documentElement.classList.add('iris-in')}catch(e){}</script>
+<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/vendor/DrawSVGPlugin.min.js" defer></script>
+<script src="js/vendor/Flip.min.js" defer></script>
+<script src="js/vendor/lenis.min.js" defer></script>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/pages.js"></script>
+<script type="module" src="js/motion.js"></script>
+</head>
+<body data-page="contact" class="day">
+<div class="iris" aria-hidden="true"><i></i><b></b></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="head">
+  <a class="logo" href="index.html" aria-label="Agrionyx home"><img src="assets/img/logo-agx.png" alt="" width="40" height="40"><span>Agrionyx</span></a>
+  <nav class="nav" data-nav aria-label="Main"><a href="grow.html">What we grow</a><a href="how-it-works.html">How it works</a><a href="farm-with-us.html">Farm with us</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  <div class="head-actions">
+    <a class="btn btn-sm" href="index.html#spec">Request specs <span class="dia"></span></a>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false">Menu</button>
+  </div>
+</header>
+<main id="main">
+<section data-allow-tall class="ph2 ph2-flip">
+  <div class="ph2-copy">
+    <h1 data-lines>Let&rsquo;s Grow Together</h1>
+    <svg class="ph2-sign" data-sign viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true"><path d="M4 40 C 90 14, 170 52, 260 32 S 420 8, 520 30 C 548 36, 574 30, 596 12"/></svg>
+    <div class="rise"><p class="lede">Buyers: send a spec request. Growers: <a href="farm-with-us.html#join">join the network</a>. Everyone else: WhatsApp or email us.</p><div class="ph2-btns"></div></div>
+  </div>
+  <div class="ph2-art">
+    <div class="ph2-dia" data-ph-dia><img src="assets/img/export-port-dusk.jpg" alt="A container port at dusk (illustrative)" style="object-position:center"></div>
+    <svg class="ph2-ring" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M50 1 L99 50 L50 99 L1 50Z"/></svg>
+    <div class="ph2-fruit" data-ph-fruit><img src="assets/img/fruit-hero.webp" alt="" width="647" height="1400"></div>
+    <span class="illus dk">Illustrative</span>
+  </div>
+</section>
+<section class="spec-req sec eye-edge-top" id="spec" data-wa-tool data-allow-tall>
+  <div class="wrap">
+    <p class="kicker">For buyers</p>
+    <h2 data-lines>Sourcing brief</h2>
+    <p class="lede rise" style="margin-bottom:36px">Tell us what you need. We reply with availability, the spec sheet and a quote, by volume and destination.</p>
+    <div class="sr-grid">
+    <form class="sr-form" data-wa-form="brief">
+      <div class="fld span2">Variety<div class="chips" data-chips="variety"><button type="button" class="chip" data-v="MD2" aria-pressed="true">MD2</button><button type="button" class="chip" data-v="Sarawak Gold (SG1)" aria-pressed="false">SG1</button><button type="button" class="chip" data-v="Not sure yet" aria-pressed="false">Not sure yet</button></div><input type="hidden" name="variety" value="MD2"></div>
+      <div class="fld">Samples needed<div class="chips" data-chips="samples"><button type="button" class="chip" data-v="Yes" aria-pressed="true">Yes</button><button type="button" class="chip" data-v="No" aria-pressed="false">No</button></div><input type="hidden" name="samples" value="Yes"></div>
+      <div class="fld span2">Form<div class="chips" data-chips="form"><button type="button" class="chip" data-v="Fresh" aria-pressed="true">Fresh</button><button type="button" class="chip" data-v="IQF frozen" aria-pressed="false">IQF frozen</button><button type="button" class="chip" data-v="Both" aria-pressed="false">Both</button></div><input type="hidden" name="form" value="Fresh"></div>
+      <label>Tonnes per week<span class="stepper"><button type="button" data-step="tonnes" data-by="-1" aria-label="Less">&minus;</button><input type="number" name="tonnes" min="1" max="350" value="5" inputmode="numeric"><button type="button" data-step="tonnes" data-by="1" aria-label="More">+</button></span></label>
+      <label>Destination<select class="field" name="market"></select></label>
+      <div class="fld span2">Start month<div class="chips" data-months></div><input type="hidden" name="start" value=""></div>
+      <label>Your name<input class="field" name="name" autocomplete="name"></label>
+      <label>Company<input class="field" name="company" autocomplete="organization"></label>
+      <label>Country<input class="field" name="country" autocomplete="country-name"></label>
+      <label class="wide">Anything else<textarea class="field" name="note" rows="2" placeholder="Grades, packing, Incoterms, carton size"></textarea></label>
+    </form>
+    <aside class="sr-sheet" aria-live="polite">
+      <div class="eye-pattern"></div>
+      <h3 data-sheet-title>Fresh MD2 pineapple</h3>
+      <p class="sub">What Agrionyx can state now. Full sheet on request.</p>
+      <dl class="sr-rows" data-sheet-rows></dl>
+      <pre class="sr-msg" data-wa-preview></pre>
+      <div class="sr-actions">
+        <a class="btn" data-wa-send href="#" target="_blank" rel="noopener">Request specs on WhatsApp <span class="dia"></span></a>
+        <a class="btn btn-line btn-sm" data-mail-send href="#">Email instead</a>
+      </div>
+    </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec navy">
+  <div class="eye-pattern"></div>
+  <div class="wrap grid-2" style="align-items:start">
+    <div><p class="kicker">Reach us</p><h2 data-lines>Talk to us</h2>
+      <ul class="eye-list rise" style="grid-template-columns:1fr;color:var(--warm)"><li><a data-wa="Hi {brand}, " href="#" target="_blank" rel="noopener">WhatsApp <span data-site="whatsapp"></span></a></li><li><a data-email href="#" data-site="email"></a></li><li><span data-site="address"></span></li><li><span data-site="hours"></span></li></ul></div>
+    <div class="faqs on-navy" data-faqs style="--line:rgba(250,248,242,.16);--muted:rgba(250,248,242,.74)"></div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-allow-tall>
+  <div class="foot-eyes"></div>
+  <div class="foot-cta">
+    <p class="buavia rise"><b>Buavia</b> Buah + via: our tropical fruit brand. Coming December 2026.</p>
+    <h2 class="rise">Let&rsquo;s Grow Together</h2>
+    <p class="lede rise" style="color:var(--on-navy-2)">Buyers, growers and partners: one WhatsApp message starts it.</p>
+    <div class="btns rise">
+      <a class="btn" data-wa="Hi {brand}, I'd like to source pineapple from you. " href="#" target="_blank" rel="noopener">Source from us <span class="dia"></span></a>
+      <a class="btn btn-line" data-wa="Hi {brand}, I'm a pineapple grower and I'd like to farm with you. " href="#" target="_blank" rel="noopener">Farm with us</a>
+    </div>
+  </div>
+  <div class="foot-cols">
+    <div><a class="foot-logo logo" href="index.html"><img src="assets/img/logo-agx.png" alt="" width="40" height="40"><span>Agrionyx</span></a><p data-site="tagline"></p><p data-site="legalName"></p></div>
+    <div><h2 class="fh">What we grow</h2><ul data-product-links></ul></div>
+    <div><h2 class="fh">Company</h2><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="farm-with-us.html">Farm with us</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h2 class="fh">Talk to us</h2><ul>
+      <li><a data-wa="Hi {brand}, " href="#" target="_blank" rel="noopener">WhatsApp <span data-site="whatsapp"></span></a></li>
+      <li><a data-email href="#" data-site="email"></a></li>
+      <li><span data-site="address"></span></li>
+      <li><a data-social="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul></div>
+  </div>
+  <p class="foot-fine">&copy; 2026 <span data-site="legalName"></span>. Farm, packhouse, process and export photos marked Illustrative are not specific Agrionyx sites.</p>
+</footer>
+</body>
+</html>

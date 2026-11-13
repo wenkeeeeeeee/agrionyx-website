@@ -1,0 +1,19 @@
+{
+  "brand": "Agrionyx",
+  "legalName": "Agrionyx Group Sdn Bhd",
+  "tagline": "Rooted in Farming. Connected to the World.",
+  "sub": "From Malaysian farms to global markets: MD2 and Sarawak Gold (SG1) pineapple, fresh and IQF frozen, grown with a network of contract farmers.",
+  "whatsapp": { "intl": "60163114407", "display": "+60 16-311 4407" },
+  "email": "khairulshah@agrionyx.com",
+  "address": "CPPC, Labu Lanjut, Sepang, Selangor, Malaysia [client to confirm the exact address]",
+  "hours": "Mon-Sat, 8am-6pm [client to confirm]",
+  "priceNote": "Price on request: quoted by volume and destination",
+  "socials": { "instagram": "", "facebook": "", "linkedin": "" },
+  "briefPurposes": ["Source fresh pineapple", "Source IQF frozen pineapple", "Domestic distribution", "Partnership or project", "Something else"],
+  "varieties": ["MD2", "Sarawak Gold (SG1)", "Not sure yet"],
+  "forms": ["Fresh", "IQF frozen", "Both"],
+  "markets": ["Malaysia (domestic)", "Japan", "South Korea", "China", "UAE", "Saudi Arabia", "Europe", "Other"],
+  "states": ["Perlis", "Kedah", "Perak", "Pahang", "Selangor", "Negeri Sembilan", "Melaka", "Johor", "Kelantan", "Terengganu", "Sabah", "Sarawak", "Other"],
+  "plantingStages": ["Planning to plant", "Newly planted", "Growing", "Flowering", "Ready to harvest"],
+  "storageKey": "agrionyx-brief-v1"
+}

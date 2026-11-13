@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Farm with us: contract farming for pineapple growers | Agrionyx</title>
+<meta name="description" content="Farmers Grow. Agrionyx Connects the Ecosystem. Production planning, agronomy support, guaranteed collection and market access for pineapple growers.">
+<meta property="og:title" content="Farm with us: contract farming for pineapple growers | Agrionyx">
+<meta property="og:description" content="Farmers Grow. Agrionyx Connects the Ecosystem. Production planning, agronomy support, guaranteed collection and market access for pineapple growers.">
+<meta property="og:image" content="https://agrionyx-website.vercel.app/variants/03-the-centre/site/assets/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBF8F1">
+<link rel="icon" href="assets/img/logo-agx.png">
+<link rel="preload" href="assets/fonts/panchang-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add('js');try{if(sessionStorage.getItem('agx-shutter'))document.documentElement.classList.add('shut-in')}catch(e){}</script>
+<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/vendor/DrawSVGPlugin.min.js" defer></script>
+<script src="js/vendor/lenis.min.js" defer></script>
+<script type="module" src="js/motion.js"></script>
+</head>
+<body data-page="farm">
+<div class="shutter" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="head">
+  <a class="logo" href="index.html" aria-label="Agrionyx home"><img src="assets/img/logo-agx.png" alt="" width="48" height="48"><span>Agrionyx</span></a>
+  <nav class="nav" data-nav aria-label="Main"><a href="grow.html">What we grow</a><a href="how-it-works.html">How it works</a><a href="farm-with-us.html">Farm with us</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  <div class="chapters" aria-hidden="true"><ol data-chapters></ol><output data-chapter-name></output></div>
+  <div class="head-actions">
+    <a class="btn btn-navy btn-sm" href="index.html#planner" data-plan>Plan supply</a>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false">Menu</button>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero" data-chapter="Farm with us">
+  <div class="ph-bg"><img src="assets/img/harvest-team.jpg" alt="" width="2000" height="1125" fetchpriority="high" style="object-position:50% 50%"><span class="illus">Illustrative</span></div>
+  <div class="ph-top"><p class="tag">Farm with us · <span lang="ms">Tanam bersama kami</span> <span class="tbc">[client to confirm a BM version]</span></p></div>
+  <div class="ph-low"><div><h1>Farmers Grow. Agrionyx Connects the Ecosystem.</h1><p class="lede">A contract, technical support and a guaranteed buyer for your pineapple.</p><div class="acts"><a class="btn" href="#join">Join the network</a></div></div><ul class="ph-facts"><li><span class="big">50+</span><span>farmers already in</span></li><li><span class="big">600+</span><span>acres, 6 states</span></li></ul></div>
+</section>
+
+<section class="sec" data-chapter="What you get"><div class="wrap">
+  <div class="sec-head"><div><p class="tag" data-rise>What you get</p><h2 data-rise>Grow it. We plan, support and collect it.</h2></div><p class="lede" data-rise>Improving productivity, creating market opportunities and increasing the value of your produce. <span data-company="grower.terms"></span></p></div>
+  <ul class="offer" data-grower-offer data-rise></ul>
+</div></section>
+<div class="carry" data-carry aria-hidden="true"><div class="carry-belt"></div><div class="carry-item crate"><div class="fruit"><img src="assets/img/pineapple-cut.webp" alt=""><img src="assets/img/pineapple-cut.webp" alt=""><img src="assets/img/pineapple-cut.webp" alt=""></div><div class="box"></div></div></div>
+
+<section class="sec sec-sand" data-chapter="The network"><div class="wrap split2">
+  <div class="ph gable" data-gable-in style="aspect-ratio:16/11"><img src="assets/img/farm-drone-spraying.jpg" alt="Field work in a pineapple farm (illustrative)" loading="lazy" width="2000" height="1333"><span class="illus">Illustrative</span></div>
+  <div style="display:grid;gap:18px"><p class="tag" data-rise>The network</p><h2 data-rise>When our farmers grow, our people grow.</h2><p class="lede" data-rise>50+ farmers grow with us across 600+ acres in 6 states, and every harvest has a home at the CPPC.</p><ul class="facts-list" data-farms data-rise></ul></div>
+</div></section>
+<section class="sec roof" id="join" data-chapter="Join" data-wa-tool style="background:var(--white)"><div class="wrap planner">
+  <div style="display:grid;gap:18px;align-content:start"><p class="tag" data-rise>Grower form</p><h2 data-rise>Join the network</h2><p class="lede" data-rise>Tell us where you farm and what you grow. The message goes straight to our team on WhatsApp.</p>
+    <div class="wa-preview"><h3>Your WhatsApp message</h3><pre data-wa-preview></pre><div class="acts"><button class="btn btn-wa" type="submit" form="grower-form">Join on WhatsApp</button><a class="link" data-mail-send href="#">Email instead</a><a data-wa-send href="#" hidden></a></div></div></div>
+  <div class="form-card"><form class="wa-form" id="grower-form" data-wa-form="grower">
+    <div class="field"><span>State</span><div class="pick" data-pick="state" data-list="states"></div></div>
+    <label class="field"><span>Town or district</span><input name="place" placeholder="e.g. Gerik"></label>
+    <div class="field"><span>Acres</span><span class="stepper"><button type="button" data-step="acres" data-by="-1" aria-label="Fewer acres">&minus;</button><input type="number" name="acres" min="1" max="2000" value="5" inputmode="numeric" aria-label="Acres"><button type="button" data-step="acres" data-by="1" aria-label="More acres">+</button></span></div>
+    <fieldset class="field"><legend>Variety</legend><div class="chips" data-chips="variety" data-list="varieties"></div></fieldset>
+    <fieldset class="field wide"><legend>Planting stage</legend><div class="chips" data-chips="stage" data-list="plantingStages"></div></fieldset>
+    <label class="field"><span>Your name</span><input name="name" autocomplete="name"></label>
+    <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel"></label>
+  </form></div>
+</div></section>
+</main>
+<footer class="foot" data-chapter="Talk to us">
+  <div class="foot-call">
+    <p class="tag">Let&rsquo;s Grow Together</p>
+    <h2>We build ecosystems, not transactions.</h2>
+    <p class="lede">One WhatsApp message reaches the team at the CPPC. Prices are quoted by volume and destination.</p>
+    <div class="acts">
+      <a class="btn btn-wa" data-wa="Hi {brand}, I'd like to source pineapple. " href="#" target="_blank" rel="noopener">Source from us</a>
+      <a class="btn btn-line btn-wa" data-wa="Hi {brand}, I'm a pineapple grower and I'd like to farm with you. " href="#" target="_blank" rel="noopener">Farm with us</a>
+    </div>
+  </div>
+  <div class="foot-cols">
+    <div><img src="assets/img/logo-agx.png" alt="Agrionyx" width="60" height="60"><p data-site="tagline"></p><p><span data-site="legalName"></span>. Grows, collects, processes and exports MD2 and SG1 pineapple.</p></div>
+    <div><h2>What we grow</h2><ul data-product-links></ul></div>
+    <div><h2>Company</h2><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="farm-with-us.html">Farm with us</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h2>Talk to us</h2><ul>
+      <li><a data-wa="Hi {brand}, " href="#" target="_blank" rel="noopener">WhatsApp <span data-site="whatsapp"></span></a></li>
+      <li><a data-email href="#" data-site="email"></a></li>
+      <li><span data-site="address"></span></li>
+      <li><span data-site="hours"></span></li>
+      <li><a data-social="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul></div>
+  </div>
+  <p class="foot-fine">&copy; 2026 <span data-site="legalName"></span>. Farm, packhouse, process and export photos marked &ldquo;Illustrative&rdquo; are not of a specific Agrionyx site; the CPPC and event photos are real.</p>
+</footer>
+<a class="btn btn-wa wa-float" data-wa="Hi {brand}, " href="#" target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>
