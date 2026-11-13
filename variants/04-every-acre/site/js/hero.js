@@ -1,15 +1,15 @@
-// Every Acre hero, daylight edition. Intro: dots gather into the AGRIONYX wordmark and break into a point pineapple.
+// Every Acre hero, daylight edition. Intro: dots gather into the Agrionyx logo (its own navy and teal) and break into a point pineapple.
 // Scroll then drops the points onto the six farm areas where photo cards pop up; they stream into the CPPC, whose pin
 // opens into the real facility photo; then arcs leave a dotted globe and land on export photos in six markets.
 import { company } from './app.js';
-import { Field, pineapple, pineDust, textPoints, peninsulaDots, globeDots, mapProj, ortho, arcPoint, PEN, GOLD, GREEN, WARM, ease, clamp, lerp, phone, reduce } from './points.js';
+import { Field, pineapple, pineDust, logoPoints, peninsulaDots, globeDots, mapProj, ortho, arcPoint, PEN, GOLD, GREEN, WARM, ease, clamp, lerp, phone, reduce } from './points.js';
 
 const hero = document.querySelector('[data-hero]');
 if (hero) {
   const canvas = hero.querySelector('canvas');
-  const N = phone ? 460 : 900;
+  const N = phone ? 640 : 1300;
   const pine = await pineapple(N);
-  const dust = pineDust(phone ? 1200 : 2600);
+  const dust = pineDust(phone ? 2000 : 4400);
   const pen = peninsulaDots(phone ? 0.15 : 0.1);
   const globe = globeDots(phone ? 5000 : 11000);
   const farms = company.farms, cppc = company.cppc, markets = company.markets;
@@ -19,13 +19,13 @@ if (hero) {
   // Intro: the dots gather into the AGRIONYX wordmark, hold, then break into the pineapple. Once per session; any input skips ahead.
   const root = document.documentElement;
   let seen = false; try { seen = sessionStorage.getItem('agx-intro') === '1'; } catch {}
-  let intro = !reduce && !seen && scrollY < 40, iT0 = null, word = null;
+  let intro = !reduce && !seen && scrollY < 40, iT0 = null, word = null, logo = null;
   const HOLD = 1.7, MORPH = 1.1;
   if (intro) {
     root.classList.add('intro'); root.style.overflow = 'hidden';
-    try { await document.fonts.load('600 100px Unbounded'); } catch {}
+    try { logo = await logoPoints(N); } catch { intro = false; root.classList.remove('intro'); root.style.overflow = ''; }
   }
-  const makeWord = () => { const ww = phone ? L.w * 0.86 : Math.min(L.w * 0.7, 1100), wh = ww * 0.2; const pts = textPoints('AGRIONYX', ww, wh, N, '600 {s}px Unbounded'); word = pine.map((_, i) => { const q = pts[i % pts.length]; return [L.w / 2 - ww / 2 + q.x + (i >= pts.length ? (Math.random() - 0.5) * 3 : 0), L.h * 0.46 - wh / 2 + q.y]; }); };
+  const makeWord = () => { if (!logo) return; const lh = phone ? Math.min(L.h * 0.26, L.w * 0.8 / logo.w) : Math.min(L.h * 0.42, L.w * 0.4 / logo.w), cy = L.h * 0.44; word = pine.map((_, i) => { const q = logo.pts[i]; return [L.w / 2 + q.x * lh, cy + q.y * lh, q.c]; }); const cap = hero.querySelector('.intro-cap'); if (cap) cap.style.top = `${cy + lh * 0.5 + (phone ? 18 : 28)}px`; };
   const endIntro = () => { if (!intro) return; intro = false; root.classList.remove('intro'); root.style.overflow = ''; try { sessionStorage.setItem('agx-intro', '1'); } catch {} ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach((e) => removeEventListener(e, skip)); };
   const skip = () => { if (intro && iT0 != null) iT0 = Math.min(iT0, f.t - HOLD); };
   if (intro) ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach((e) => addEventListener(e, skip, { passive: true }));
@@ -104,7 +104,7 @@ if (hero) {
   };
 
   const f = new Field(canvas, {
-    windHost: hero, windR: phone ? 0 : 120, lerp: 0.14, size: phone ? 1.75 : 2.35,
+    windHost: hero, windR: phone ? 0 : 120, lerp: 0.14, size: phone ? 1.6 : 2.1,
     onResize: (ff) => { layout(ff); if (intro) makeWord(); },
     before(ctx, t) {
       if (!reduce) pS += (p - pS) * 0.12; else pS = p;
@@ -216,7 +216,7 @@ if (hero) {
       let P = [L.pc[0] + pp.x * L.pH * br, L.pc[1] + pp.y * L.pH * br];
       q.c = pp.c; q.s = pp.s; q.a = 1;
       // intro: from the wordmark into the pineapple, each dot on its own small delay
-      if (IK < 1 && word) { const kk = ease(clamp(IK * 1.5 - m.d * 0.5)); const W = word[i]; P = [lerp(W[0], P[0], kk), lerp(W[1], P[1], kk) - Math.sin(Math.PI * kk) * 40 * (m.d - 0.5)]; }
+      if (IK < 1 && word) { const kk = ease(clamp(IK * 1.5 - m.d * 0.5)); const W = word[i]; P = [lerp(W[0], P[0], kk), lerp(W[1], P[1], kk) - Math.sin(Math.PI * kk) * 40 * (m.d - 0.5)]; if (kk < 0.45) { q.c = W[2]; q.s = 1.05; } }
       const fp = L.farmPx[m.fi], spread = (phone ? 10 : 16) * (m.fi === 5 ? 1.3 : 1);
       const M = [fp[0] + m.gx * spread, fp[1] + m.gy * spread];
       const ue = ease(clamp(b * 1.6 - m.u0 * 0.6));

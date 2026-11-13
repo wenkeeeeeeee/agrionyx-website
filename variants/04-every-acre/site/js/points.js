@@ -103,6 +103,25 @@ export async function pineapple(n) {
       c: crown ? (br > 0.42 ? LEAF : GREEN) : br > 0.55 ? GOLD2 : br > 0.38 ? GOLD : '#A8700A', s: 0.75 + br * 0.9, crown };
   });
 }
+// The Agrionyx logo in points, coloured from the logo itself (navy AG, teal X): [{x,y (centred, / height), c}].
+export async function logoPoints(n) {
+  const img = new Image(); img.src = 'assets/img/logo-agx.png'; await img.decode();
+  const W = img.width, H = img.height, cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+  const cx = cv.getContext('2d', { willReadFrequently: true }); cx.drawImage(img, 0, 0);
+  const d = cx.getImageData(0, 0, W, H).data, cand = [];
+  let x0 = W, x1 = 0, y0 = H, y1 = 0;
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+    const i = (y * W + x) * 4;
+    const mx = Math.max(d[i], d[i + 1], d[i + 2]), mn = Math.min(d[i], d[i + 1], d[i + 2]);
+    // the mark only (rows above the small 'Agrionyx Group' line), saturated pixels only
+    if (d[i + 3] > 200 && mx - mn > 50 && y < H * 0.625) { cand.push([x, y, d[i], d[i + 1], d[i + 2]]); x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }
+  }
+  const h = y1 - y0, hex = (v) => v.toString(16).padStart(2, '0');
+  // even coverage: shuffle, then keep a spread-out subset
+  const list = shuffle(cand.slice()).slice(0, n);
+  while (list.length < n) list.push(cand[(Math.random() * cand.length) | 0]);
+  return { w: (x1 - x0) / h, pts: list.map(([x, y, r, g, b]) => ({ x: (x - x0 - (x1 - x0) / 2) / h, y: (y - y0) / h - 0.5, c: `#${hex(r)}${hex(g)}${hex(b)}` })) };
+}
 // Fine dust from the same photo: dim texture behind the 640 points so the fruit reads at a glance.
 export function pineDust(n) {
   const { cand, x0, x1, y0, y1 } = pineCache, h = y1 - y0;

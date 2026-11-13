@@ -722,11 +722,11 @@ figcaption .real, .tag .real, .cppc-frame .real { color: #9AD37E; }
 @media (prefers-reduced-motion: reduce) { .hero { height: auto; } }
 
 /* dots intro: wordmark in points, then the pineapple; copy and header wait for it */
-.intro-cap { position: absolute; left: 0; right: 0; top: calc(46% + min(7vw, 116px)); z-index: 3; margin: 0; text-align: center; font: 500 11px/1 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--mute); opacity: 0; pointer-events: none; transition: opacity .5s; }
+.intro-cap { position: absolute; left: 0; right: 0; top: calc(44% + min(27vh, 21vw * .7) + 18px); z-index: 3; margin: 0; text-align: center; font: 500 11px/1 var(--mono); letter-spacing: .22em; text-transform: uppercase; color: var(--mute); opacity: 0; pointer-events: none; transition: opacity .5s; }
 html.intro .intro-cap { opacity: 1; animation: fadeUp .9s .5s var(--ease) both; }
 html.intro.intro-out .intro-cap { opacity: 0; animation: none; }
 html.intro:not(.intro-out) .head, html.intro:not(.intro-out) .chapters { opacity: 0; }
 .head, .chapters { transition: opacity .7s, transform .5s var(--ease); }
 html.intro:not(.intro-out) :is(.h-hero .ln span, .hero-sub, .facts, .btns) { animation-play-state: paused; }
 html.intro:not(.intro-out) .hero-copy { visibility: hidden; }
-@media (max-width: 760px) { .intro-cap { top: calc(46% + 13vw); font-size: 9.5px; } }
+@media (max-width: 760px) { .intro-cap { top: calc(44% + min(16vh, 30vw) + 14px); font-size: 9.5px; } }
